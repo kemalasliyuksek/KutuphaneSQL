@@ -237,11 +237,9 @@ UPDATE odunc
 SET TeslimTarihi = DATE_ADD(EmanetTarihi, INTERVAL 20 DAY)
 WHERE TeslimTarihi IS NULL;
 
--- Tablolari listeler
--- ***************************** TABLOLAR ************************************* --
-SELECT * FROM odunc ORDER BY KutuphaneID ASC;	-- ODUNC   		tablosunu gosterir
-SELECT * FROM uyeler;							-- UYELER       tablosunu gosterir
-SELECT * FROM kitaplar;							-- KITAPLAR 	tablosunu gosterir
-SELECT * FROM yazarlar;							-- YAZARLAR     tablosunu gosterir
-SELECT * FROM yayinevleri;						-- YAYINEVLERI  tablosunu gosterir
--- **************************************************************************** --
+-- Tablolari listeler --
+SELECT * FROM odunc ORDER BY KutuphaneID ASC;
+SELECT * FROM uyeler;
+SELECT * FROM kitaplar;
+SELECT * FROM yazarlar;
+SELECT * FROM yayinevleri;
